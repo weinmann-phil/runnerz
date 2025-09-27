@@ -52,15 +52,31 @@ public class Run {
     return startedOn;
   }
 
+  public void setStartedOn(LocalDateTime startedOn) {
+    this.startedOn = startedOn;
+  }
+
   public LocalDateTime getCompletedOn() {
     return completedOn;
+  }
+
+  public void setCompletedOn(LocalDateTime completedOn) {
+    this.completedOn = completedOn;
   }
 
   public Integer getKilometers() {
     return kilometers;
   }
 
+  public void setKilometers(Integer kilometers) {
+    this.kilometers = kilometers;
+  }
+
   public Location getLocation() {
     return location;
+  }
+
+  public void setLocation(Location location) {
+    this.location = location;
   }
 }

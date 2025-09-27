@@ -2,6 +2,7 @@ package dev.weinmann.runnerz.run;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Run {
   
@@ -19,7 +20,7 @@ public class Run {
     this.completedOn = completedOn;
     this.kilometers = kilometers;
     this.location = location;
-    if (!completedOn.isAfter(startedOn) {
+    if (!completedOn.isAfter(startedOn)) {
       throw new IllegalArgumentException("Completed On must be after Started On");
     }
   }
@@ -78,5 +79,18 @@ public class Run {
 
   public void setLocation(Location location) {
     this.location = location;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || !(getClass() == o.getClass())) return false;
+    Run run = (Run) o;
+    return Objects.equals(id, run.id) && Objects.equals(title, run.title) && Objects.equals(startedOn, run.startedOn) && Objects.equals(completedOn, run.completedOn) && Objects.equals(kilometers, run.kilometers) && Objects.equals(location, run.location);
+  }
+
+  @Override
+  public int hashCode() {
+    return Object.hash(id, title, startedOn, completedOn, kilometers, location);
   }
 }

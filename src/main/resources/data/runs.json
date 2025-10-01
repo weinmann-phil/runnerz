@@ -1,0 +1,44 @@
+{
+  "runs": [
+    {
+      "id": 1,
+      "title": "Noon run",
+      "startedOn": "2025-01-23T12:07:31.900843627",
+      "completedOn": "2025-01-23T12:45:47.862714277",
+      "kilometers": 3,
+      "location": "INDOOR"
+    },
+    {
+      "id": 2,
+      "title": "Noon run",
+      "startedOn": "2025-01-24T12:07:31.900843627",
+      "completedOn": "2025-01-24T14:45:47.862714277",
+      "kilometers": 16,
+      "location": "OUTDOOR" 
+    },
+    {
+      "id": 3,
+      "title": "Noon run",
+      "startedOn": "2025-01-23T12:07:31.900843627",
+      "completedOn": "2025-01-23T12:45:47.862714277",
+      "kilometers": 3,
+      "location": "INDOOR"
+    },
+    {
+      "id": 4,
+      "title": "Noon run",
+      "startedOn": "2025-01-23T12:07:31.900843627",
+      "completedOn": "2025-01-23T12:45:47.862714277",
+      "kilometers": 3,
+      "location": "INDOOR"
+    },
+    {
+      "id": 5,
+      "title": "Noon run",
+      "startedOn": "2025-01-23T12:07:31.900843627",
+      "completedOn": "2025-01-23T12:45:47.862714277",
+      "kilometers": 3,
+      "location": "INDOOR"
+    }
+  ]
+}

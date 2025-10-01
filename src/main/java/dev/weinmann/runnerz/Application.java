@@ -2,6 +2,7 @@ package dev.weinmann.runnerz;
 
 import dev.weinmann.runnerz.run.Location;
 import dev.weinmann.runnerz.run.Run;
+import dev.weinmann.runnerz.run.RunRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -25,14 +26,12 @@ public class Application {
 
   }
 
-  @Bean
-    CommandLineRunner runner() {
-      // Is a container for all the beans in the system
-      return args -> {
-        log.info("Testing record Run");
-        Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 4, Location.OUTDOOR);
-        log.info("Run: " + run);
-        
-      };
-    }
+  //@Bean
+  //  CommandLineRunner runner(RunRepository runRepository) {
+  //    // Is a container for all the beans in the system
+  //    return args -> {
+  //      Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 4, Location.OUTDOOR);
+  //      runRepository.create(run);
+  //    };
+  //  }
 }

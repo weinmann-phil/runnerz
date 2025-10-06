@@ -2,7 +2,7 @@ package dev.weinmann.runnerz;
 
 import dev.weinmann.runnerz.run.Location;
 import dev.weinmann.runnerz.run.Run;
-import dev.weinmann.runnerz.run.RunRepository;
+import dev.weinmann.runnerz.run.JdbcClientRunRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

@@ -30,15 +30,33 @@
 		<java.version>21</java.version>
 	</properties>
   <dependencies>
+    <!-- Optional Compose Support from SpringBoot -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-docker-compose</artifactId>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId>
     </dependency>
     <!-- Interim solution as long as no proper DB is connected -->
-    <dependency>
+    <!-- <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <scope>runtime</scope>
+    </dependency> -->
+    <!-- Postgres connection -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- JDBC interaction -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jdbc</artifactId>
     </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

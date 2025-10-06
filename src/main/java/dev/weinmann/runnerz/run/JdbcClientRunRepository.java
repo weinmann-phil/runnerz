@@ -14,12 +14,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class RunRepository {
+public class JdbcClientRunRepository {
   
-  private static final Logger log = LoggerFactory.getLogger(RunRepository.class);
+  private static final Logger log = LoggerFactory.getLogger(JdbcClientRunRepository.class);
   private final JdbcClient jdbcClient;
 
-  public RunRepository(JdbcClient jdbcClient) {
+  public JdbcClientRunRepository(JdbcClient jdbcClient) {
     this.jdbcClient = jdbcClient;
   }
 

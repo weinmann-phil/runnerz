@@ -20,9 +20,9 @@ import java.util.Optional;
 @RequestMapping("/api/runs")
 public class RunController {
  
-  private final RunRepository runRepository;
+  private final JdbcClientRunRepository runRepository;
 
-  public RunController(RunRepository runRepository) {
+  public RunController(JdbcClientRunRepository runRepository) {
     this.runRepository = runRepository;
   }
 
